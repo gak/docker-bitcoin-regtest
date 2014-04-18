@@ -11,6 +11,3 @@ RUN mkdir ~/.bitcoin
 RUN echo "rpcuser=test\nrpcpassword=test\n" > ~/.bitcoin/bitcoin.conf
 
 RUN echo "alias rt='bitcoind -regtest'" >> ~/.bashrc
-
-#RUN bitcoind -regtest -server -daemon -rpcwait && sleep 10 && bitcoind -regtest setgenerate true 111
-
