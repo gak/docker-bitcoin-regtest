@@ -1,7 +1,8 @@
-FROM ubuntu:precise
+FROM ubuntu:xenial
 
 RUN apt-get -y update
 RUN apt-get install -y python-software-properties 
+RUN apt-get install -y software-properties-common
 
 RUN add-apt-repository ppa:bitcoin/bitcoin
 RUN apt-get update
