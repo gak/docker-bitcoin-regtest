@@ -4,7 +4,7 @@ DOCKER_BOB  =$(DOCKER_RUN) -p 19444:18444 -p 19332:18332 --name=bob --hostname=b
 
 IMG=gak/bitcoin-regtest
 
-RUN_DAEMON=bitcoind -regtest -rpcallowip=* -printtoconsole
+RUN_DAEMON=bitcoind -regtest -rpcallowip=0.0.0.0/0 -printtoconsole
 RUN_SHELL=bash
 
 build:
